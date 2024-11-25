@@ -18,10 +18,10 @@ formularioBusqueda.addEventListener("submit", function(evento) { //cada vez que 
     .then(function(pokemon) { // si la busqueda es exitosa
       const tipos = pokemon.types.map(function(tipo) { 
         return tipo.type.name; 
-      }).join(", ");  //se usa .join con la coma para unir los nombres y separarlos por comas
+      }) 
       const habilidades = pokemon.abilities.map(function(habilidad) {
         return habilidad.ability.name;  
-      }).join(", ");  
+      })  
       divResultados.innerHTML = `
         <h3>${pokemon.name.toUpperCase()}</h3>
         <p><strong>Tipos:</strong> ${tipos}</p>
