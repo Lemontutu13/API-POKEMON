@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>API POKEMON</title>
+  <link rel="stylesheet" href="style.css">
+</head >
+<body class="imagen_fondo" >
+  <h1 style="margin-top: 200px;" >Busca tu Pokémon favorito</h1>
+  
+  
+  <!-- Formulario de búsqueda -->
+  <form id="formularioBusqueda">
+    <input type="text" id="campoBusqueda" placeholder="Escribe el nombre del Pokémon" required>
+    <button type="submit">Buscar</button>
+  </form>
+
+  <!-- Recuadro donde se mostrarán los resultados -->
+  <div id="cuadroResultado">
+    <div id="resultadosPokemon"></div> <!-- Este es el contenedor de resultados internos -->
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

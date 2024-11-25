@@ -1,0 +1,64 @@
+/* Estilos generales */
+.imagen_fondo{
+  background-image: url(img/maxresdefault.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+}
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+}
+
+/* Configuración del contenedor principal */
+.seccion {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Estilo del botón */
+.image-button {
+  border: none;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  flex-grow: 1;
+}
+
+/*Imagenes dentro del botón*/
+.img {
+  flex-grow: 1;
+  width: 0px;
+  object-fit: cover;
+  opacity: .7;
+  transition: .3s ease;
+}
+
+/*Efecto hover sobre imágenes*/
+.img:hover {
+  width: 200px;
+  opacity: 1;
+  filter: contrast(120%);
+}
+
+
+#cuadroResultado {
+  color: aliceblue;
+  width: 300px;          /* Ancho del recuadro */
+  height: 500px;         /* Alto del recuadro */
+  background-color: rgb(58, 55, 55); /* Color de fondo */
+  border: 7px solid #333; /* Borde del recuadro */
+  border-radius: 15px;    /* Bordes redondeados */
+  padding: 20px;          /* Espaciado interno */
+  box-sizing: border-box; /* Incluye el padding y borde en las dimensiones */
+  display: none;  /* Ocultamos el recuadro al principio */
+  margin-top: 10px;
+  margin-left: 800px;
+}
